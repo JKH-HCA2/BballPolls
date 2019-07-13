@@ -14,11 +14,12 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<title>BBall Polls</title>
+	<link rel="icon" href="images/favicon.jpg" />
 </head>
 
 <body>
 	<!-- Navbar Start -->
-	<nav class="navbar navbar-expand-lg navbar-dark">
+	<nav class="navbar navbar-expand-lg navbar-light">
 		<a class="navbar-brand" href="index.html">
 			<img src="images/navicon.png" width="30" height="30" alt="NavIcon">
 		</a>
@@ -26,7 +27,7 @@
 			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
+		<header class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item">
 					<a class="nav-link" href="data.html">Data</a>
@@ -41,17 +42,24 @@
 					<a class="nav-link" href="register.html">Register</a>
 				</li>
 			</ul>
-		</div>
+		</header>
 	</nav>
-	<div class="row">
-		<div class="col-md-3 left"></div>
-		<div class="col-md-6 center">
-			<h1 class="myheader">Basketball Polls</h1>
+	<main class="row">
+		<aside class="col-md-3 left">
+			<img src="images/steph5.jpg" alt="Steph Curry">
+		</aside>
+		<section class="col-md-6 center">
+			<h1 class="myheader display-3">Basketball Polls</h1>
 			<p class="intro">Welcome to &copy; Basketball Polls. Here you will find a compilation of user submitted data comparing opinions on some of basketball's most hotly debated topics.</p>
 			<p class="intro">To begin, register an account with us by clicking below before heading over to the data page.</p>
-		</div>
-		<div class="col-md-3 right"></div>
-	</div>
+			<form method="get" action="register.html">
+				<button type="submit" class="btn btn-outline-primary">Get Started</button>
+			</form>
+		</section>
+		<aside class="col-md-3 right">
+			<img src="images/lebron4.jpg" alt="Lebron James">
+		</aside>
+	</main>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
