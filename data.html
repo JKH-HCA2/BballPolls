@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+	<!-- Head Content Start-->	
 	<title>BBall Polls</title>
 	<link rel="icon" href="images/favicon.jpg" />
 </head>
@@ -21,14 +22,18 @@
 	<!-- Navbar Start-->
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<a class="navbar-brand" href="index.html">
-			<img src="images/navicon.png" width="30" height="30" alt="">
+			<img class="homebutton" src="images/navicon.png" width="30" height="30" alt="">
 		</a>
+		<h2 class="navheading">BasketballPolls.com</h2>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
+		<header class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="data.html">Data</a>
 				</li>
@@ -42,19 +47,23 @@
 					<a class="nav-link" href="register.html">Register</a>
 				</li>
 			</ul>
-		</div>
+		</header>
 	</nav>
-	<div class="row">
-		<div class="col-md-3 left">
-			<img src="images/steph5.jpg" alt="Steph Curry">
-		</div>
-		<div class="col-md-6 center">
+
+	<!-- Main Content -->
+	<main class="row no-gutters">
+		<aside class="col-md-3 left">
+			<img class="banner" src="images/steph5.jpg" alt="Steph Curry">
+		</aside>
+		<!-- User Questionnaire -->
+		<section class="col-md-6 center text-center">
+			<img src="images/navicon.png" alt="Top Logo" id="toplogo">
 			
-		</div>
-		<div class="col-md-3 right">
-			<img src="images/lebron4.jpg" alt="Lebron James">
-		</div>
-	</div>
+		</section>
+		<aside class="col-md-3 right">
+			<img class="banner" id="lebron" src="images/lebron4.jpg" alt="Lebron James">
+		</aside>
+	</main>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

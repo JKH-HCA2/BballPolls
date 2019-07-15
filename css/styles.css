@@ -1,12 +1,5 @@
-.intro {
-    margin-top: 25px;
-}
 
-.center {
-    text-align: center;
-    margin-top: 175px;
-}
-
+/*This provides the gradient effect of the navbar */
 .navbar {
     background: rgba(134,174,204,1);
     background: -moz-linear-gradient(top, rgba(134,174,204,1) 0%, rgba(212,228,239,1) 77%, rgba(212,228,239,1) 89%);
@@ -22,8 +15,84 @@
     margin-top: 25px;
 }
 
+/* Controls spacing of the notes appearing below each main content block */
+.subnote {
+    margin-top: 5px;
+}
+
+#lebron {
+    margin-left: 23px;
+}
+
+#toplogo {
+    margin-top: 50px;
+}
+
+#faq p {
+    font-weight: 200;
+}
+
+/* Controls formatting for all main contentblocks across html files */
+.contentblock {
+    margin-top: 30px;
+    padding: 5%;
+}
+
+label {
+    text-align: left;
+    font-weight: 200;
+}
+
+.navheading {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Controls formatting for all headings across html files */
+.headings {
+    margin-top: 25px;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.faq {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.intro {
+    font-weight: 200;
+}
+
+/* All non-pc media device formatting */
 @media only screen and (max-width: 1025px) {
-    img {
-      display: none;
+    .banner {
+        display: none;
+    }
+    .myheader {
+        font-size: 45px;
+    }
+    .intro {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .row {
+        padding: 5%;
     }
   }
+
+/* Medium device and larger formatting */
+@media only screen and (min-width: 768px) {
+    /* Restricts a heading that appears on the navbar */
+    .navheading {
+        display: none;
+    }
+}
+
+
+/* Logo button removal from devices without a hamburger nav */
+@media only screen and (max-width: 768px) {
+    .homebutton {
+        display: none;
+    }
+}
