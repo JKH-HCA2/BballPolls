@@ -53,18 +53,18 @@
 	<!-- Main Content -->
 	<main class="row no-gutters">
 		<aside class="col-md-3 left">
-			<img class="banner" src="images/steph5.jpg" alt="Steph Curry">
+			<img class="banner border-right border-primary" src="images/steph5.jpg" alt="Steph Curry">
 		</aside>
+
 		<!-- User Questionnaire -->
 		<section class="col-md-6 center text-center">
 			<img src="images/navicon.png" alt="Top Logo" id="toplogo">
 			<h1 class="headings">User Questionnaire</h1>
-			<!-- Heading placed outside section tag for aesthetic purposes -->
 			<form method="get" action="dataresults.html" class="border border-primary rounded-lg contentblock">
 				<div class="form-group text-left">
 					<label for="InputQuestion1">Which state did you grow up in?</label>
 					<select id="InputQuestion1" class="custom-select custom-select-sm">
-						<option selected="selected" value="none"></option>
+						<option disabled selected="selected" value="none"> -- Choose Your State -- </option>
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
 						<option value="AZ">Arizona</option>
@@ -75,7 +75,7 @@
 				<div class="form-group text-left">
 					<label for="InputQuestion2">What is your favorite team?</label>
 					<select id="InputQuestion2" class="custom-select custom-select-sm">
-						<option selected="selected" value="none"></option>
+						<option disabled selected="selected" value="none"> -- Choose Your Team -- </option>
 						<option value="BOS">Boston Celtics</option>
 						<option value="BKN">Brooklyn Nets</option>
 						<option value="DAL">Dallas Mavericks</option>
@@ -85,7 +85,7 @@
 				</div>
 				<div class="form-group text-left">
 					<label for="customRange1">Use the slider to estimate the percentage of your favorite teams game you watch.</label>
-					<input type="range" class="custom-range" min="0" max="10" id="customRange1">			
+					<input value="0" type="range" class="custom-range" min="0" max="10" id="customRange1">			
 				</div>
 				<div class="form-group text-left">
 					<label for="exampleInputQuestion3">Who is your favorite player of all time?</label>
@@ -111,7 +111,7 @@
 			</form>		
 		</section>
 		<aside class="col-md-3 right">
-			<img class="banner" id="lebron" src="images/lebron4.jpg" alt="Lebron James">
+			<img id="lebron" class="banner border-left border-primary" src="images/lebron4.jpg" alt="Lebron James">
 		</aside>
 	</main>
 

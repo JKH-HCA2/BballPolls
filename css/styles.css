@@ -1,6 +1,6 @@
 /* Universal CSS styling start */
 #lebron {
-    margin-left: 23px;
+    margin-left: 22px;
 }
 
 #toplogo {
@@ -43,18 +43,6 @@
     font-weight: 300;
 }
 
-/* Data page CSS start */
-
-
-
-
-
-
-
-
-
-
-
 /* Controls spacing of the notes appearing below each main content block */
 .subnote {
     margin-top: 5px;
@@ -79,6 +67,14 @@ label {
     font-weight: 200;
 }
 
+/* Table CSS start */
+table th {
+    font-weight: 500;
+}
+table td {
+    font-weight: 300;
+}
+
 /* All non-pc media device formatting */
 @media only screen and (max-width: 1025px) {
     .banner {
@@ -99,6 +95,18 @@ label {
 /* Hides pictures on the about page from small and medium devices */
 @media only screen and (max-width: 1023px) {
     .aboutpics {
+        display: none;
+    }
+    table th {
+        font-size: 10px;
+    }
+    table td {
+        font-size: 10px;
+    }
+    #toplogo {
+        display: none;
+    }
+    .homebutton {
         display: none;
     }
 }
