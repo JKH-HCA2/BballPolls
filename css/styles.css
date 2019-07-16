@@ -1,3 +1,11 @@
+/* Universal CSS styling start */
+#lebron {
+    margin-left: 22px;
+}
+
+#toplogo {
+    margin-top: 50px;
+}
 
 /*This provides the gradient effect of the navbar */
 .navbar {
@@ -11,8 +19,28 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86aecc', endColorstr='#d4e4ef', GradientType=0 );
 }
 
+/* Home page css start */
+.intro {
+    font-weight: 200;
+}
+
 .btn {
     margin-top: 25px;
+}
+
+.navheading {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* About page CSS start */
+#faq p {
+    font-weight: 200;
+}
+
+.faq {
+    font-size: 22px;
+    font-weight: 300;
 }
 
 /* Controls spacing of the notes appearing below each main content block */
@@ -20,32 +48,10 @@
     margin-top: 5px;
 }
 
-#lebron {
-    margin-left: 23px;
-}
-
-#toplogo {
-    margin-top: 50px;
-}
-
-#faq p {
-    font-weight: 200;
-}
-
 /* Controls formatting for all main contentblocks across html files */
 .contentblock {
     margin-top: 30px;
     padding: 5%;
-}
-
-label {
-    text-align: left;
-    font-weight: 200;
-}
-
-.navheading {
-    font-size: 18px;
-    font-weight: 300;
 }
 
 /* Controls formatting for all headings across html files */
@@ -55,13 +61,18 @@ label {
     font-weight: 300;
 }
 
-.faq {
-    font-size: 22px;
-    font-weight: 300;
+/* Styles the form labels across Data/Login/Registration page */
+label {
+    text-align: left;
+    font-weight: 200;
 }
 
-.intro {
-    font-weight: 200;
+/* Table CSS start */
+table th {
+    font-weight: 500;
+}
+table td {
+    font-weight: 300;
 }
 
 /* All non-pc media device formatting */
@@ -81,6 +92,25 @@ label {
     }
   }
 
+/* Hides pictures on the about page from small and medium devices */
+@media only screen and (max-width: 1023px) {
+    .aboutpics {
+        display: none;
+    }
+    table th {
+        font-size: 10px;
+    }
+    table td {
+        font-size: 10px;
+    }
+    #toplogo {
+        display: none;
+    }
+    .homebutton {
+        display: none;
+    }
+}
+
 /* Medium device and larger formatting */
 @media only screen and (min-width: 768px) {
     /* Restricts a heading that appears on the navbar */
@@ -88,7 +118,6 @@ label {
         display: none;
     }
 }
-
 
 /* Logo button removal from devices without a hamburger nav */
 @media only screen and (max-width: 768px) {

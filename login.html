@@ -19,7 +19,7 @@
 
 <body>
 	<!-- Navbar Start-->
-	<nav class="navbar navbar-expand-lg navbar-light">
+	<nav class="navbar navbar-expand-lg navbar-light sticky-top">
 		<a class="navbar-brand" href="index.html">
 			<img class="homebutton" src="images/navicon.png" width="30" height="30" alt="">
 		</a>
@@ -52,13 +52,14 @@
 	<!-- Main Content -->	
 	<main class="row no-gutters">
 		<aside class="col-md-3 left">
-			<img class="banner" src="images/steph5.jpg" alt="Steph Curry">
+			<img class="banner border-right border-primary" src="images/steph5.jpg" alt="Steph Curry">
 		</aside>
 		<!-- Login Form -->
 		<section class="col-md-6 center text-center">
 			<img src="images/navicon.png" alt="Top Logo" id="toplogo">
 			<h1 class="headings">Please Login</h1>
-			<form method="get" action="data.html" id="loginform" class="contentblock border border-primary rounded-lg">	
+			<!-- <form method="POST" action="data.html" id="loginform" class="contentblock border border-primary rounded-lg"> -->
+			<form method="get" action="data.html" id="loginform" autocomplete="on" class="contentblock border border-primary rounded-lg">	
 				<div class="form-group text-left">
 					<label for="exampleInputEmail1">Email address</label>
 					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -78,7 +79,7 @@
 			<p class="subnote">New User? <a href="register.html">Sign up here</a></p>
 		</section>
 		<aside class="col-md-3 right">
-			<img class="banner" id="lebron" src="images/lebron4.jpg" alt="Lebron James">
+			<img id="lebron" class="banner border-left border-primary" src="images/lebron4.jpg" alt="Lebron James">
 		</aside>
 	</main>
 
