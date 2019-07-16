@@ -43,6 +43,18 @@
     font-weight: 300;
 }
 
+/* Data page CSS start */
+
+
+
+
+
+
+
+
+
+
+
 /* Controls spacing of the notes appearing below each main content block */
 .subnote {
     margin-top: 5px;
@@ -83,6 +95,13 @@ label {
         padding: 5%;
     }
   }
+
+/* Hides pictures on the about page from small and medium devices */
+@media only screen and (max-width: 1023px) {
+    .aboutpics {
+        display: none;
+    }
+}
 
 /* Medium device and larger formatting */
 @media only screen and (min-width: 768px) {
