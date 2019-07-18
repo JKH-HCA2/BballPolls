@@ -1,11 +1,9 @@
-<!-- EXTRA CREDIT PAGE -->
-
-
-
 <!doctype html>
 <html lang="en">
 
 <head>
+    <!-- EXTRA CREDIT PAGE -->
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,6 +20,7 @@
 </head>
 
 <body>
+    
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top gradient">
         <a class="navbar-brand" href="index.html">
@@ -53,34 +52,80 @@
     <!-- Main Content -->
     <main class="row no-gutters">
         <aside class="col-md-3 left">
+            <!-- All images are copyrighted by the National Basketball Association-->
             <img class="banner border-right border-primary" src="images/steph5.jpg" alt="Steph Curry">
         </aside>
-        <!-- Graph/Chart/Table Block -->
+        
+        <!-- Comparative Results Block -->
         <section class="col-md-6 center text-center">
             <img src="images/navicon.png" alt="Top Logo" id="toplogo">
-            <h1 class="headings">Peer Results</h1>
-
-
-            <table class="table table-responsive table-borderless border border-primary rounded-lg contentblock">
-                <thead>
-                    <tr>
-                        <th scope="col">Home State</th>
-                        <th scope="col">Favorite Team</th>
-                        <th scope="col">Favorite Player</th>
-                        <th scope="col">GOAT</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Utah</td>
-                        <td>Jazz</td>
-                        <td>John Stockton</td>
-                        <td>Jordan</td>
-                    </tr>
-                </tbody>
-            </table>
-
-
+            <h1 class="headings">Your Results</h1>
+            <section class="contentblock border border-primary rounded-lg">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is your favorite team?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                You and <strong>12%</strong> of respondents are all warriors fans, that doesn't leave
+                                much
+                                elbow room on the bandwagon. Just kidding of course! The surge of the Golden State
+                                Warriors (that began with Steph Curry) has seen the team's popularity skyrocket in
+                                recent
+                                years.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Who is your favorite player of all time?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                You and <strong>15%</strong> of respondents share the same infatuation with Stephen
+                                Curry! It's not surprise considering his inhuman ability to shoot the basketball and
+                                electrify a stadium full of people. I'm sure the anti-Lebron fan vote doesn't hurt
+                                either.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Who is the greatest player of all time?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                You and <strong>58%</strong> of respondents agree that Lebron James is the greatest
+                                basketball player of all time. And it's no wonder why - you were all born after Jordan
+                                retired! Kidding of course, Lebron's shown time and time again the ability to whatever
+                                he wants on the court. A physical speciman whose combination of size and speed the
+                                league has never seen. I could go on and on about him but the Jordan fans would get mad,
+                                so we'll leave it at that.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p class="subnote">Done reading? Learn more about BasketballPolls <a href="about.html">here</a></p>
         </section>
         <aside class="col-md-3 right">
             <img id="lebron" class="banner border-left border-primary float-right" src="images/lebron4.jpg"
