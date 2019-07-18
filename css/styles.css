@@ -20,6 +20,11 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0 );
 }
 
+.navheading {
+    font-size: 18px;
+    font-weight: 300;
+}
+
 /*This provides the gradient effect of the navbar */
 .gradient {
     background: rgba(134,174,204,1);
@@ -38,12 +43,7 @@
 }
 
 .btn {
-    margin-top: 20px;
-}
-
-.navheading {
-    font-size: 18px;
-    font-weight: 300;
+    margin-top: 10px;
 }
 
 /* About page CSS start */
